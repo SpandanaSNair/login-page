@@ -1,0 +1,81 @@
+<html>
+    <head>
+    <title>Employee</title>
+    <style>
+.error{
+    color:red;
+}
+h1{
+        color:black;
+    font-size: xx-large;  
+  }
+  table{
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px solid black;
+  }
+
+ th, td{
+    border: 3px solid black;
+  }
+        body
+            {
+                margin-top: 50px;
+                background-image: url(https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?t=st=1741253423~exp=1741257023~hmac=45bd53984df28b3fa67592130ee357d1aa642887670642b557fa21cd5d44c2f3&w=1800);
+                text-align: center;
+                background: size 5px;
+
+            }
+    </style>
+<h1>Fill employee details</h1>
+</head>
+
+    <body>
+        <form id="employeeForm" action="employee345.js" method="post">
+
+            <br><label for="employeename">Employee Name:</label>
+            <input type="text" id="employeename" placeholder="Enter name"/>
+            <br>
+            <span id="employeenameError" class="error"></span>
+            <br><br>
+
+            <label for="Employeeid">Employee Id:</label>
+            <input type="number" id="Employeeid" placeholder="Enter Id"/>
+            <br>
+            <span id="EmployeeidError" class="error"></span>
+            <br><br>
+
+            <label for="age">Employee Age:</label>
+            <input type="number" id="age" placeholder="Enter Age"/>
+            <br>
+            <span id="ageError" class="error"></span>
+            <br><br>
+
+            <label for="Teamname">Team Name:</label>
+            <input type="text" id="Teamname" placeholder="Team name"/>
+            <br>
+            <span id="TeamnameError" class="error"></span>
+            <br><br>
+            <label for="Designation">Designation:</label>
+            <input type="text" id="Designation" placeholder="Designation"/>
+            <br>
+            <span id="DesignationError" class="error"></span>
+            <br>
+        <input type="submit" value="Submit"/>
+    </form>
+    
+    <table id="EmployeeTable">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee Id</th>
+                <th>Age</th>
+                <th>Team Name</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+        <tbody id="EmployeeData"></tbody>
+    </table>
+        <script src="employee.js"></script>
+    </body>
+</html>
